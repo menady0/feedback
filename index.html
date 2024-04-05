@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback</title>
+    <link rel="icon" href="feedback.ico">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <form action="https://api.web3forms.com/submit" method="POST" class="content-left">
+        <div class="title">
+          <h2>Send your feedback</h2>
+          <hr />
+        </div>
+        <input type="hidden" name="access_key" value="cf9c5e19-f494-4192-aad6-9d1afb3a9381">
+        <input
+          type="text"
+          name="name"
+          placeholder="Enter your name"
+          class="contact-input"
+        />
+        <input
+          type="text"
+          name="email"
+          placeholder="Enter your email"
+          class="contact-input"
+          required
+        />
+        <textarea
+          name="feedback"
+          placeholder="Send us your feedback..."
+          class="contact-input"
+          required
+        ></textarea>
+        <button type="submit">
+          Submit <i class="fa-solid fa-arrow-right-long"></i>
+        </button>
+      </form>
+      <div class="content-right">
+        <img src="Feedback.png" alt="" />
+      </div>
+    </div>
+  </body>
+</html>
